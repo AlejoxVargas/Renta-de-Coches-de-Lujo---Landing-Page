@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;700&family=Poppins:wght@500&display=swap');
 
+/* Estilos generales */
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-
+    font-family: 'Inter Tight', sans-serif;
 }
 
 body {
-    font-family: 'Inter Tight', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #FFFFFF;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Estilos de la cabecera */
 .header {
     display: flex;
     align-items: center;
@@ -115,104 +119,91 @@ body {
     transform: scale(1.1);
 }
 
-.Reservar {
-    background-color: blue;
+/* Estilos del contenido principal */
+.product-info {
+    margin-right: 30px;
 }
 
-.container {
-    width: 50%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
-    background-color: red;
+.product-info img {
+    width: 600px;
+    height: 381px;
+    border-radius: 24px;
 }
 
-.headerReservar {
-    align-self: stretch;
-    padding-left: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.product-details {
+    width: 600px;
+    border-radius: 24px;
+    gap: 1rem;
 }
 
-.icon-container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.icon {
-    width: 16px;
-    height: 16px;
-    background: linear-gradient(165deg, #65BC8D 0%, rgba(129.67, 213.64, 90.15, 0.47) 100%);
-    box-shadow: 0px 0px 6px 2px rgba(130.11, 209.39, 50.84, 0.25);
-    border-radius: 9999px;
-}
-
-.text-container {
-    text-align: center;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    word-wrap: break-word;
-}
-
-.main-content {
-    align-self: stretch;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 5px;
-}
-
-.title {
-    align-self: stretch;
-    color: #000000;
+.product-details h2 {
+    color: #002B31;
     font-size: 48px;
     font-weight: 400;
-    line-height: 57.60px;
+    line-height: 1.2;
     word-wrap: break-word;
 }
 
-.description {
-    align-self: stretch;
-    color: #000000;
+.product-details p {
+    color: #002B31;
     font-size: 20px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 2;
     word-wrap: break-word;
 }
 
-/****barra de busqueda*******/
-
-.formContainer {
-    width: 1500px;
-    height: 558px;
-    position: relative;
-    background: #FCA311;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 9px #FCA311 solid;
-
+.price {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    word-wrap: break-word;
 }
 
-.item {
-    padding-left: 24px;
-    padding-right: 23px;
-    background: white;
+.buy-button {
+    width: 222px;
+    height: 38px;
     border-radius: 5px;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: inline-flex;
+    background: #109F16;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
 }
-button{
-    background-color: red;
+
+.buy-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del pie de página */
+
+.thumbnails {
+    margin-top: 2.5rem;
+    margin-left: 150px;
+    width: 556px;
+    height: 452px;
+}
+
+.thumbnails #main-img {
+    width: 620px;
+    height: 420px;
+}
+
+.thumbnails .second-img {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnails .second-img img {
+    width: 100px;
+    height: 70px;
 }

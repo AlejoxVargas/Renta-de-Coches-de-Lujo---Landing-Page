@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;500;700&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    margin-top: 3em;
+}
+
+.header h1 {
+    left: 65px;
+    top: 69px;
+    margin-left: 6em;
+}
+
+.header .logo{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-direction: row;
+    margin-top: 2.8em;
+    margin-left: 13rem ;
+}
+
+.user-details {
+    width: 40%;
+}
+
+.payment-details {
+    margin-top: 3.5em;
+    width: 48%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    width: 26.875em;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px #DDE0E0 solid;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+    margin-top: 24px;
+}
+
+.price {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37.50px;
+    word-wrap: break-word;
+}
+
+.buy-button {
+    display: inline-block;
+    width: 222px;
+    height: 38px;
+    position: relative;
+    background: #109F16;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    transform: scale(1.1);
+  }
+
+
+.description {
+    margin-top: 1em;
+    color: #002B31;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    margin-bottom: 0.5rem;
+}
+
+.user-details h2,
+.payment-details h2 {
+    align-self: stretch;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    color: #002B31;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.60px;
+    word-wrap: break-word;
+}
+
+.paymentMethod {
+    width: 100%;
+    margin-top: 2rem;
+    align-content: space-between;
+}
+
+img{
+    margin-right: 2rem;
+}
+
+.paymentMethod img:nth-child(1) {
+    width: 100px;
+    height: 30px;
+}
+
+.paymentMethod img:nth-child(2) {
+    width: 100px;
+    height: 30px;
+}
+
+.paymentMethod img:nth-child(3) {
+    width: 80px;
+    height: 30px;
+}
