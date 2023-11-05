@@ -11,3 +11,6 @@ Diseño Responsivo: Garantiza que la Landing Page sea accesible desde dispositiv
 Este proyecto es una adición a mi portafolio como programador y muestra mis habilidades en el desarrollo web, incluyendo HTML, CSS y JavaScript. Siéntase libre de explorar el código fuente y contribuir si lo desea.
 
 ¡Espero que disfrutes explorando esta Landing Page de Coches de Lujo y que te sirva como inspiración para tus propios proyectos de desarrollo web!
+
+/*PROTOTIPO EN FIGMA*/
+LINK FIGMA: https://www.figma.com/file/PErs7nace5uVxXB8cT8BAY/Landing-Page-Nomechoques?type=design&node-id=811%3A416&mode=design&t=ZdJjL0rkRvFdpVQk-1

@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Nomechoques</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Título</title>
 </head>
 
 <body>
+
     <section>
         <header class="header">
             <div class="logo">
-                <a href="./Principal.html">
+                <a href="./index.html">
                     <p>Nomechoques</p>
                 </a>
             </div>
@@ -30,33 +31,42 @@
         </header>
     </section>
 
-    <section class="Reservar">
-    <div class="container">
-        <div class="headerReservar">
-            <div class="icon-container">
-                <div class="icon"></div>
-            </div>
-            <p class="text-container">¡Disponible a cualquier hora. Donde quieras!</p>
-        </div>
-        <div class="main-content">
-            <h1 class="title">Alquiler de coches <br/>de lujo en Madrid</h1>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque porta sodales. Morbi vel varius augue. Cras id finibus orci.</p>
+    <div class="main-content">
 
-            <div class="formContainer">
-                <form action="" method="post">
-                    <input class="item" type="text" name="lugarRecogida" placeholder="Lugar de recogida">
-                    <input class="item" type="date" name="fechaRecogida" placeholder="Fecha de recogida">
-                    <input class="item" type="time" name="horaRecogida" placeholder="Hora de recogida">
-                    <input class="item" type="date" name="lugarDevolucion" placeholder="Lugar de devolución">
-                    <input class="item" type="time" name="horaDevolucion" placeholder="Hora de devolución" value="">
-                </form>
-                <button>submit</button>
+        <div class="container1">
+            <div class="header1">
+                <div class="icon">
+                    <div class="circle"></div>
+                </div>
+                <div class="text">
+                    <p>¡Disponible a cualquier hora. Donde quieras!</p>
+                </div>
             </div>
+            <div class="content">
+                <h1>Alquiler de coches<br> de lujo en Madrid</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque porta sodales. Morbi vel
+                    varius augue Cras id finibus orci. </p>
+            </div>
+
+            <form action="" method="post">
+                <div class="info-box">
+                    <input class="info" id="input--Lugar--Recogida" type="text" placeholder="Lugar Recogida">
+                    <input class="info" id="input--Fecha-Recogida" type="date" placeholder="Fecha Recogida">
+                    <input class="info" id="input--Hora--Recogida" type="datetime" placeholder="Hora Recogida">
+                    <input class="info" id="input--Fecha-Devolucion" type="date" placeholder="Fecha Devolución">
+                    <input class="info" id="input--Hora-Devolucion" type="datetime" placeholder="Hora Devolución">
+                    <a href="Compra.html" class="button">Buscar</a>
+                </div>
+            </form>
         </div>
-       
+
+        <div class="img-container">
+            <img class="image" id="img-main-1" src="./Recursos/Coche2home.png" alt="Coche de lujo del home">
+            <img class="image" id="img-main-2" src="./Recursos/Coche1home.png" alt="Coche de lujo del home">
+            <img class="image" id="img-main-3" src="./Recursos/Coche3home.png" alt="Coche de lujo del home">
+        </div>
     </div>
-
-    </section>
+    <p class="scroll-hint">Desliza para continuar</p>
 
 </body>
 
