@@ -122,19 +122,19 @@ body {
     display: flex;
 }
 
-.img-container{
+.img-container {
     width: 100%;
     position: relative;
 }
 
-.main-content #img-main-1{
+.main-content #img-main-1 {
     position: relative;
     width: 300px;
     height: 300px;
     left: 439px;
 }
 
-.main-content #img-main-2{
+.main-content #img-main-2 {
     position: absolute;
     width: 579px;
     height: 260px;
@@ -142,7 +142,7 @@ body {
     top: 65px;
 }
 
-.main-content #img-main-3{
+.main-content #img-main-3 {
     position: relative;
     width: 636px;
     height: 357px;
@@ -216,6 +216,7 @@ body {
 
 
 /* Barra de busqueda */
+
 .info-box {
     width: 700px;
     height: 58px;
@@ -236,27 +237,27 @@ body {
     text-align: center;
 }
 
-#input--Lugar--Recogida{
+#input--Lugar--Recogida {
     width: 213px;
 }
 
-#input--Fecha-Recogida{
+#input--Fecha-Recogida {
     width: 100px;
 }
 
-#input--Hora--Recogida{
+#input--Hora--Recogida {
     width: 70px;
 }
 
-#input--Fecha-Devolucion{
+#input--Fecha-Devolucion {
     width: 100px;
 }
 
-#input--Hora-Devolucion{
+#input--Hora-Devolucion {
     width: 70px;
 }
 
-.button{
+.button {
     width: 70px;
     height: 35px;
     border: none;
@@ -279,4 +280,280 @@ body {
     color: #919C9F;
     font-size: 20px;
     line-height: 30px;
+}
+
+/*------COMIENZO DE SECCIÓN DE RENTAR-------*/
+
+.seccion--Rentar {
+    background-color: black;
+    margin-top: 30px;
+    width: 100%;
+    height: 740px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 50px;
+    margin-left: 102px;
+    margin-right: 102px;
+    box-sizing: border-box;
+}
+
+.car-card {
+    width: 310px;
+    height: 420px;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+    color: black;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.car-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.seccion--Rentar h2 {
+    font-size: 1.5625rem;
+    /* 25px */
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.seccion--Rentar p {
+    font-size: 1.125rem;
+    /* 18px */
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.car-card+.car-card {
+    margin-left: 10px;
+}
+
+
+.container--car--brand {
+    width: 1180px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 28px;
+    padding-right: 298px;
+    gap: 47px;
+    display: inline-flex;
+    border-bottom: 3px white solid;
+    position: relative;
+    top: 50px;
+    left: 170px;
+}
+
+.car-brand {
+    font-size: 18px;
+    line-height: 21.60px;
+    word-wrap: break-word;
+    font-weight: 400;
+    color: white;
+
+}
+
+.gold-text {
+    color: #FCA311;
+}
+
+/*------COMIENZO DE SECCIÓN DE CONTACTO-------*/
+
+
+/* Estilos del contenido principal */
+
+
+.container--Contacto {
+    height: 750px;
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info,
+.carPic {
+    margin-top: 130px;
+}
+
+.product-info {
+    margin-right: 30px;
+}
+
+.product-info img {
+    width: 600px;
+    height: 381px;
+    border-radius: 24px;
+}
+
+.product-details {
+    width: 600px;
+    border-radius: 24px;
+    gap: 1rem;
+}
+
+.product-details h2 {
+    color: #002B31;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    word-wrap: break-word;
+}
+
+.product-details p {
+    color: #002B31;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    word-wrap: break-word;
+}
+
+.price {
+    color: black;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+.buy-button {
+    width: 155px;
+    height: 62px;
+    border-radius: 5px;
+    background: #FCA311;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+
+#buy-button2 {
+    background: black;
+    color: white;
+    margin-left: 16px;
+}
+
+.buy-button:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del pie de página */
+
+
+.thumbnails {
+    margin-top: 2.5rem;
+    margin-left: 150px;
+    width: 556px;
+    height: 452px;
+}
+
+.thumbnails #main-img {
+    width: 658px;
+    height: 268px;
+}
+
+.thumbnails .second-img {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnails .second-img img {
+    width: 100px;
+    height: 70px;
+}
+
+#footer--img2 {
+    width: 129px;
+    height: 63px;
+}
+
+#footer--img3 {
+    width: 97px;
+    height: 94px;
+}
+
+#footer--img4 {
+    width: 68px;
+    height: 77px;
+}
+
+#footer--img5 {
+    width: 51px;
+    height: 81px;
+}
+
+#footer--img6 {
+    width: 149px;
+    height: 91px;
+}
+
+
+/*--------FOOTER----------*/
+
+.direccion-footer {
+    color: white;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 18px;
+    word-wrap: break-word
+}
+
+.logo--footer a {
+    font-size: 24px;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header--footer {
+    justify-content: space-between;
+    height: 78px;
+}
+
+.Icon--Container {
+    display: flex;
+    margin-top: auto;
+}
+
+.Icon--Container i {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
