@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomechoques Checkout</title>
+    <link rel="stylesheet" href="./styles/check-out.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/6c9446269a.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="./index.html" class="logo"><h1>NOMECHOQUES</h1></a>
+    </div>
+
+
+    <main class="container">
+        <form>
+            <div class="user-details">
+                <h2>Checkout</h2>
+
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email" required oninput="validateEmail()">
+                    <span class="error-icon hidden">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                    </span>
+                    <span class="success-icon hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </span>
+                    <div id="email-error"></div>
+                </div>
+                <script src="./src/script.js"></script>
+                
+                <div class="input-field">
+                    <input type="text" id="nombre" placeholder="Nombre" required autocomplete="off">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="direccion" placeholder="Dirección">
+                </div>
+                <div class="input-field">
+                    <input type="tel" id="telefono" placeholder="Teléfono">
+                </div>
+
+                <div class="paymentMethod">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PayPal_logo.svg/527px-PayPal_logo.svg.png"
+                        alt="Paypal">
+                    <img src="https://www.behomemadrid.com/wp-content/uploads/visa-and-mastercard-logos-logo-visa-png-logo-visa-mastercard-png-visa-logo-white-png-awesome-logos-705x210.png"
+                        alt="Visa and MasterCard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png"
+                        alt="Apple Pay">
+                </div>
+            </div>
+
+            <div class="payment-details">
+                <div class="input-field form-group">
+                    <input type="number" id="cardNumber" placeholder="Card Number" required>
+                </div>
+                <div class="input-field">
+                    <input type="date" id="expDate" placeholder="Fecha Expiración" required>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="cvv" maxlength="3" placeholder="CVV" required>
+                </div>
+
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque
+                    porta
+                    sodales. Morbi vel varius augue. Cras id finibus orci. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Fusce scelerisque porta sodales. Morbi vel varius augue. Cras id finibus orci.
+                </p>
+                <p class="price">599.99$ / 1 día</p>
+                <button type="submit">pincha aqui</button>
+                <span class="submit-error"></span>
+                <a href="Agradecimiento.html" class="buy-button">Comprar</a>
+            </div>
+        </form>
+    </main>
+    <script>/*====== Validación de formulario ======*/
+
+        var emailError = document.getElementById('email-error');
+        
+        function validateEmail(){
+            var email = document.getElementById('email').value.trim();
+        
+            if(email.length === 0){
+                emailError.innerHTML = 'Email es requerido';
+                // Oculta los iconos y el mensaje de éxito
+                hideIcons();
+                return;
+            }
+        
+            if(!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)){
+                emailError.innerHTML = 'Escribe de nuevo el Email';
+                // Oculta el ícono de éxito y muestra el ícono de error
+                showIcons(false);
+                return;
+            }
+        
+            emailError.innerHTML = 'Válido';
+            // Muestra el ícono de éxito y oculta el ícono de error
+            showIcons(true);
+        }
+        
+        function showIcons(isValid) {
+            var errorIcon = document.querySelector('.error-icon');
+            var successIcon = document.querySelector('.success-icon');
+        
+            if (isValid) {
+                errorIcon.classList.add('hidden');
+                successIcon.classList.remove('hidden');
+            } else {
+                errorIcon.classList.remove('hidden');
+                successIcon.classList.add('hidden');
+            }
+        }
+        
+        function hideIcons() {
+            var errorIcon = document.querySelector('.error-icon');
+            var successIcon = document.querySelector('.success-icon');
+        
+            errorIcon.classList.add('hidden');
+            successIcon.classList.add('hidden');
+        }</script>
+</body>
+
+</html>
